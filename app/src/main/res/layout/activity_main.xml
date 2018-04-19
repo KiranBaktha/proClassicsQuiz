@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".MainActivity">
+   <!--
+    <include
+        layout="@layout/main_actionbar"
+        android:id="@+id/mainbar"></include>
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp"
+        android:textColor="#fcf9f9"
+        android:text="@string/welcome"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="Your name:"
+        android:textColor="#fcf9f9"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:id="@+id/Name"
+        android:textSize="20sp"
+        android:textColorHint="#3259d9"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/hint"
+        android:layout_marginRight="10dp"
+        />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8e8e8e"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_latin"
+            android:layout_width="120dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fffffd"
+            android:onClick="LatinButton"
+            android:text="@string/latin"
+            android:textColor="#131313" />
+
+        <Button
+            android:id="@+id/button_greek"
+            android:layout_height="300dp"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/greek"
+            android:onClick="GreekButton"
+            android:background="#fffffd"
+            android:textColor="#131313"/>
+
+        <Button
+            android:id="@+id/button_mixed"
+            android:layout_height="300dp"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fffffd"
+            android:onClick="MixedButton"
+            android:textColor="#131313"
+            android:text="@string/mixed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="#fffffd"
+            android:text="@string/exit"
+            android:onClick="Exit"
+            android:textColor="#131313" />
+    </LinearLayout>
+
+</LinearLayout>

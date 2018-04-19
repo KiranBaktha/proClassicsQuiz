@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuizActivity">
+    <item
+        android:id="@+id/menu_latin"
+        android:orderInCategory="100"
+        android:title="@string/latin"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_greek"
+        android:orderInCategory="200"
+        android:title="@string/greek"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_mixed"
+        android:orderInCategory="300"
+        android:title="@string/mixed"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuExit"
+        android:orderInCategory="400"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+
+</menu>
